@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+</head>
+<body>
+    <h1>Resultat</h1>
+    
+
+    <p>Du valde: <strong>{{ .PlayerChoice }}</strong></p>
+    <p>Datorn valde: <strong>{{ .ComputerChoice }}</strong></p>
+    <p><strong>{{ .Result }}</strong></p>
+
+    <br/>
+
+    
+    <p>
+        Total spelade: <strong>{{.Stats.Total}}</strong> <br/>
+        Vinster: <strong>{{.Stats.Wins}}</strong> <br/>
+        Vinst Procent: <strong>{{.Stats.WinPct}} %</strong> <br/>
+    </p>
+
+
+    <p><a href="/">Spela igen</a></p>
+
+</body>
+</html>
